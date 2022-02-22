@@ -16,3 +16,4 @@ const makeIngredientsUl = ingredients.map( element => {
 
 const ingredientsUlEl = document.querySelector('#ingredients');
 ingredientsUlEl.append(...makeIngredientsUl);
+
