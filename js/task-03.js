@@ -26,9 +26,8 @@ const images = [
 // imagesUlel.append(...elements);
 
 const imagesUlEl = document.querySelector(".gallery");
-const imagesElements = images.map((item) => {
-  imagesUlEl.insertAdjacentHTML(
-    "beforeend",
-    `<img src=${item.url} alt=${item.alt} width='350px'>`
-  );
-});
+const imagesElements = images.map(
+  (item) => `<img src=${item.url} alt=${item.alt} width='350px'>`
+);
+
+imagesUlEl.insertAdjacentHTML("beforeend", imagesElements);
